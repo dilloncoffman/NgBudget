@@ -8,9 +8,8 @@ describe('BudgetItemCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BudgetItemCardComponent ]
-    })
-    .compileComponents();
+      declarations: [BudgetItemCardComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

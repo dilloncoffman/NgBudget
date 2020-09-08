@@ -8,9 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BudgetItemCardComponent implements OnInit {
   @Input() isIncome: boolean = true;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

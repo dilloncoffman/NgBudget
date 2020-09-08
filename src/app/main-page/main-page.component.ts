@@ -14,7 +14,13 @@ export class MainPageComponent implements OnInit {
   ngOnInit(): void {}
 
   // method that will run when the form is submitted, this will catch the emitted event for the formSubmit
-  addItem(newItem: BudgetItem) {
+  addItem(newItem: BudgetItem): void {
     this.budgetItems.push(newItem);
+  }
+
+  deleteItem(item: BudgetItem): void {
+    // Remove the item from the array
+    let index = this.budgetItems.indexOf(item);
+    this.budgetItems.splice(index, 1);
   }
 }
